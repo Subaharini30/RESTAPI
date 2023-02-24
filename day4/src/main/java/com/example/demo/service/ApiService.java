@@ -25,10 +25,10 @@ public class ApiService
 	{
 		return repository.findById(id);
 	}
-	public String updateStudent(Student student)
+	public Student updateStudent(Student student)
 	{
 		repository.save(student);
-		return "Updated";
+		return student;
 	}
 	public boolean deleteStudentById(int id)
 	{

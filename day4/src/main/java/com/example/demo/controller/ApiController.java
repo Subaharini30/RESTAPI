@@ -37,7 +37,7 @@ public class ApiController
 		return service.getStudentById(id);
 	}
 	@PutMapping("/{id}")
-	public String update(@RequestBody Student student)
+	public Student update(@RequestBody Student student)
 	{
 		return service.updateStudent(student);
 	}
